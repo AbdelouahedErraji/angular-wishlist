@@ -7,5 +7,6 @@ import { wishItem } from 'src/shared/models/wishItem';
   styleUrls: ['./wish-list.component.css'],
 })
 export class WishListComponent {
+
   @Input() wishes: wishItem[] = [];
 }

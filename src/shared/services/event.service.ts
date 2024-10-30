@@ -4,7 +4,7 @@ import { Subject } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-class EventService {
+export class EventService {
   private subject = new Subject();
 
   emit(eventName: string, payload: any) {
@@ -21,5 +21,3 @@ class EventService {
 
   constructor() {}
 }
-
-export default new EventService();
